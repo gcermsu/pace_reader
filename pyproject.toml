@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pacereader"
+version = "0.0.1"
+readme = "README.md"
+description = "a package to import PACE data and convert to GeoTiff format"
+keywords = ["GIS", "remote sensing"]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "xarray",
+    "gdal",
+    "netCDF4",
+	"matplotlib"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # list of folders that contain the packages (["."] by default)
+include = ["pacereader*"]  # package names should match these glob patterns (["*"] by default)
+#exclude = []  # exclude packages matching these glob patterns (empty by default)
+
+# Optional. Used to configure black (autoformatter)
+[tool.black]
+line-length = 100
+# Optional. Used to configure isort (import sorter)
+[tool.isort]
+profile = "black"
+line_length = 100
