@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-src/pacereader/data_loader.py
-src/pacereader/read_pace.py
-src/pacereader.egg-info/PKG-INFO
-src/pacereader.egg-info/SOURCES.txt
-src/pacereader.egg-info/dependency_links.txt
-src/pacereader.egg-info/requires.txt
-src/pacereader.egg-info/top_level.txt
