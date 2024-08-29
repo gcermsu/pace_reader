@@ -1,5 +1,0 @@
-numpy
-xarray
-gdal
-netCDF4
-matplotlib
