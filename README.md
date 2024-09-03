@@ -1,8 +1,8 @@
 # PACE Reader
-The pacereader package is designed to facilitate the use of PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) hyperspectral data available at (https://pace.gsfc.nasa.gov/). It reads the original data in .netCDF format and converts it into a georeferenced GeoTIFF format. Working with PACE data can be challenging because the reflectance values in the NetCDF files are not directly associated with geographic coordinates. This package simplifies the process by merging the geographic layers (latitude and longitude) with the variable layers, resulting in a georeferenced raster.
+The pacereader package is designed to facilitate the use of PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) hyperspectral data available at [NASA's PACE mission] (https://pace.gsfc.nasa.gov/). It reads the original data in .netCDF format and converts it into a georeferenced GeoTIFF format. Working with PACE data can be challenging because the reflectance values in the NetCDF files are not directly associated with geographic coordinates. This package simplifies the process by merging the geographic layers (latitude and longitude) with the variable layers, resulting in a georeferenced raster.
 
 ## Dependencies management and package installation
-o set up the environment and install the package, you can recreate the conda environment with all the necessary dependencies. This command should be run from the root of the repository:
+To set up the environment and install the package, you can recreate the conda environment with all the necessary dependencies. This command should be run from the root of the repository:
 ```
 conda env create -f environment.yml
 ```
