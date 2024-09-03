@@ -1,19 +1,22 @@
 # PACE Reader
-pacereader package is designed to read PACE hyperspectral data (https://pace.gsfc.nasa.gov/) in its original format (.netCDF) and convert it to GeoTiff reprojected format.
+The pacereader package is designed to facilitate the use of PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) hyperspectral data available at (https://pace.gsfc.nasa.gov/). It reads the original data in .netCDF format and converts it into a georeferenced GeoTIFF format. Working with PACE data can be challenging because the reflectance values in the NetCDF files are not directly associated with geographic coordinates. This package simplifies the process by merging the geographic layers (latitude and longitude) with the variable layers, resulting in a georeferenced raster.
 
 ## Dependencies management and package installation
-The following command can be used to recreate the conda enviroment with all the dependencies needed to run the code in this repository. The package is also installed in development mode. This command should be run from the root of the repository.
+o set up the environment and install the package, you can recreate the conda environment with all the necessary dependencies. This command should be run from the root of the repository:
 ```
 conda env create -f environment.yml
 ```
-If you prefer to use another conda enviroment, you need to activate it and install the package in development mode. To do so, from the repository root, run the command below. It will install the package in development mode, so you can make changes to the code and test it without the need to reinstall the package.
+If you prefer to use an existing conda environment, you can activate it and then install the pacereader package in development mode. This allows you to make changes to the code and test them without needing to reinstall the package. Run the following command from the root of the repository:
 ```
 pip install -e .
 ```
-You can also install the package directly from GitHub using the following command:
+Alternatively, you can install the package directly from GitHub using the command:
 ```
 pip install git+https://github.com/gcermsu/pacereader
 ```
+## Usage
+To see examples of how to use the pacereader package, refer to the Jupyter notebook provided in the notebooks folder. The notebook contains detailed examples and usage scenarios.
+
 ## Additional information
-[GCER](https://www.gcerlab.com/)
+For more information about our research and projects, please visit the [GCER website](https://www.gcerlab.com/)
 ![](./docs/gcer_logo.png)
